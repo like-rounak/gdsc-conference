@@ -110,18 +110,24 @@ body {
 }
 
 
-/* Your existing CSS rules */
-
 /* Media Query for Mobile Devices */
 @media (max-width: 768px) {
   .header {
     padding: 10px;
   }
 
-  .website-name {
+  .logo {
+    width: 60px; /* Adjust the size of the logo */
+    height: 60px; /* Adjust the size of the logo */
     margin-right: 10px;
-    font-size: 1.2rem;
   }
+
+  .website-name {
+    font-size: 1rem; /* Adjust the font size for the website name */
+    font-weight: normal; /* Reset font weight if needed */
+    margin-right: 10px;
+  }
+
 
   .search-box-container {
     flex-grow: 2;
