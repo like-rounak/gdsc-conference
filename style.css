@@ -14,7 +14,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: black;
+  background-color: rgb(30, 30, 30);
   display: flex;
   align-items: center;
   padding: 10px 20px;
@@ -109,4 +109,55 @@ body {
   vertical-align: middle;
 }
 
-/* Rest of your CSS styles */
+
+/* Your existing CSS rules */
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+  .header {
+    padding: 10px;
+  }
+
+  .website-name {
+    margin-right: 10px;
+    font-size: 1.2rem;
+  }
+
+  .search-box-container {
+    flex-grow: 2;
+  }
+
+  .search-box {
+    width: 100%;
+    max-width: 300px; /* Limit the width to avoid excessive stretching */
+    font-size: 0.9rem;
+  }
+
+  .filter-by-container {
+    margin-left: 5px;
+  }
+
+  .filter-by-label {
+    display: block; /* Display the label on top of the select box */
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+  }
+
+  .filter-by {
+    width: 100%;
+    max-width: 200px; /* Limit the width to avoid excessive stretching */
+    font-size: 0.9rem;
+  }
+
+  #conferenceContainer {
+    margin-top: 80px;
+    padding: 10px;
+  }
+
+  .conference-card {
+    width: calc(100% - 20px);
+    margin: 10px 0;
+  }
+}
+
+
