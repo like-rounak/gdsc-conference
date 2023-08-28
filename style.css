@@ -1,16 +1,81 @@
-body {
-  font-family: Arial, sans-serif;
+body, h1, h2, h3, p {
   margin: 0;
   padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
   background-color: black;
   color: white;
 }
 
-.conference-container {
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  z-index: 9999;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
+}
+
+.website-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.search-box-container {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-box {
+  width: 500px; 
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  background-color: #333;
+  color: white;
+  margin: 0;
+  font-size: 1rem;
+}
+
+.filter-by-container {
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.filter-by-label {
+  font-size: 1rem;
+  margin-right: 5px;
+}
+
+.filter-by {
+  padding: 5px;
+  border: none;
+  border-radius: 3px;
+  background-color: #333;
+  color: white;
+}
+
+#conferenceContainer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 20px;
+  margin-top: 120px; 
 }
 
 .conference-card {
@@ -37,10 +102,11 @@ body {
   margin: 5px 0;
 }
 
-/* New styles for organizer icon */
 .conference-card .organiser-icon {
-  width: 25px;
-  height: 25px;
+  width: 24px;
+  height: 24px;
   margin-right: 5px;
   vertical-align: middle;
 }
+
+/* Rest of your CSS styles */

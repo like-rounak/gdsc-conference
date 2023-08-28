@@ -3,12 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="icons8-today-16.png" type="image/x-icon">
   <link rel="stylesheet" href="style.css">
-  <title> Tech Conferences </title>
+  <link rel="icon" href="icons8-today-16.png" type="image/x-icon">
+  <title>Schedule</title>
 </head>
 <body>
-  <div class="conference-container" id="conferenceContainer"></div>
+  <div class="header">
+    <img src="icons8-today-100.png" alt="Website Logo" class="logo">
+    <span class="website-name">TechXpo</span>
+    <div class="search-box-container">
+      <input type="text" id="searchBox" class="search-box" placeholder="Search...">
+    </div>
+    <div class="filter-by-container">
+      <span class="filter-by-label">Filter by:</span>
+      <select id="filterBy" class="filter-by">
+        <option value="all">All</option>
+        <option value="united states">United States</option>
+        <option value="netherlands">Netherlands</option>
+        <option value="japan">Japan</option>
+        <option value="france">France</option>
+        <option value="india">India</option>
+        <option value="germany">Germany</option>
+        <option value="singapore">Singapore</option>
+      </select>
+    </div>
+  </div>
+  <div id="conferenceContainer" class="conference-container"></div>
   <script src="script.js"></script>
+  <hr>
+    &lt;&lt; &copy; Rounak Saha &gt;&gt;&gt;
 </body>
 </html>
