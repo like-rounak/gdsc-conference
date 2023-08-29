@@ -68,7 +68,7 @@ function createConferenceCard(conference) {
 // Call fetchConferences to load data
 fetchConferences();
 
-// Filtering func
+// Filter func
 document.getElementById("filterBy").addEventListener("change", function() {
   const filterBy = this.value.toLowerCase();
   const conferenceContainer = document.getElementById("conferenceContainer");
@@ -85,7 +85,7 @@ document.getElementById("filterBy").addEventListener("change", function() {
   });
 });
 
-// Searching func
+// Search func
 document.getElementById("searchBox").addEventListener("input", function() {
   const searchTerm = this.value.toLowerCase();
   const conferenceContainer = document.getElementById("conferenceContainer");
