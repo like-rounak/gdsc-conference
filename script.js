@@ -1,4 +1,4 @@
-// Fetch and display conference data from the API
+// Fetch conference data from the API
 async function fetchConferences() {
   const response = await fetch("https://gdscdev.vercel.app/api");
   const data = await response.json();
@@ -13,7 +13,7 @@ async function fetchConferences() {
   });
 }
 
-// Create a conference card element
+// Create conference card element
 function createConferenceCard(conference) {
   const conferenceCard = document.createElement("div");
   conferenceCard.className = "conference-card";
@@ -65,10 +65,10 @@ function createConferenceCard(conference) {
   return conferenceCard;
 }
 
-// Call fetchConferences to load data initially
+// Call fetchConferences to load data
 fetchConferences();
 
-// Filtering functionality
+// Filtering func
 document.getElementById("filterBy").addEventListener("change", function() {
   const filterBy = this.value.toLowerCase();
   const conferenceContainer = document.getElementById("conferenceContainer");
@@ -85,7 +85,7 @@ document.getElementById("filterBy").addEventListener("change", function() {
   });
 });
 
-// Searching functionality
+// Searching func
 document.getElementById("searchBox").addEventListener("input", function() {
   const searchTerm = this.value.toLowerCase();
   const conferenceContainer = document.getElementById("conferenceContainer");

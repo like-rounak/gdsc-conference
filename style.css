@@ -110,21 +110,22 @@ body {
 }
 
 
-/* Media Query for Mobile Devices */
+/* Media Query for Mobile Devices  */
+
 @media (max-width: 768px) {
   .header {
     padding: 10px;
   }
 
   .logo {
-    width: 60px; /* Adjust the size of the logo */
-    height: 60px; /* Adjust the size of the logo */
+    width: 60px; /
+    height: 60px; 
     margin-right: 10px;
   }
 
   .website-name {
-    font-size: 1rem; /* Adjust the font size for the website name */
-    font-weight: normal; /* Reset font weight if needed */
+    font-size: 1rem; 
+    font-weight: normal; 
     margin-right: 10px;
   }
 
@@ -135,7 +136,7 @@ body {
 
   .search-box {
     width: 100%;
-    max-width: 300px; /* Limit the width to avoid excessive stretching */
+    max-width: 300px; 
     font-size: 0.9rem;
   }
 
@@ -144,14 +145,14 @@ body {
   }
 
   .filter-by-label {
-    display: block; /* Display the label on top of the select box */
+    display: block; 
     font-size: 0.9rem;
     margin-bottom: 5px;
   }
 
   .filter-by {
     width: 100%;
-    max-width: 200px; /* Limit the width to avoid excessive stretching */
+    max-width: 200px; 
     font-size: 0.9rem;
   }
 
