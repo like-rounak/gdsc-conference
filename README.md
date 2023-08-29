@@ -4,9 +4,9 @@
 
 ## Deployed 
 
-The project is deployed on - 
-https://like-rounak.github.io/gdsc-conference/ 
-https://fantastic-custard-047222.netlify.app/
+The project is deployed on -
+1. https://like-rounak.github.io/gdsc-conference/
+2. https://fantastic-custard-047222.netlify.app/
 
 # TechXpo Conference Schedule
 
