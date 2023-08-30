@@ -112,23 +112,25 @@ document.getElementById("sortOrder").addEventListener("change", function() {
   const sortedConferenceCards = [...conferenceCards];
   sortConferenceCards(sortedConferenceCards, sortOrder);
 
-  conferenceContainer.innerHTML = "";
+  conferenceContainer.innerHTML = ""; 
+
   sortedConferenceCards.forEach(card => {
-    conferenceContainer.appendChild(card);
+    conferenceContainer.appendChild(card); 
   });
 });
+
 
 // sort cards
 function sortConferenceCards(cards, sortOrder) {
   if (sortOrder === "Default") {
-    // bug - not going original order
-    return;
+    sortedConferenceCards = conferenceCards.slice(); 
   } else if (sortOrder === "earlier") {
     cards.sort((a, b) => compareConferenceCards(a, b, "earlier"));
   } else if (sortOrder === "later") {
     cards.sort((a, b) => compareConferenceCards(a, b, "later"));
   }
 }
+
 
 // compare conference cards to sort
 function compareConferenceCards(cardA, cardB, sortOrder) {
