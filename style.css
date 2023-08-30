@@ -1,14 +1,17 @@
+/* Reset default margin and padding for elements */
 body, h1, h2, h3, p {
   margin: 0;
   padding: 0;
 }
 
+/* Global styles for the body */
 body {
   font-family: Arial, sans-serif;
   background-color: black;
   color: white;
 }
 
+/* Header styles */
 .header {
   position: fixed;
   top: 0;
@@ -21,18 +24,21 @@ body {
   z-index: 9999;
 }
 
+/* Logo styles */
 .logo {
   width: 100px;
   height: 100px;
   margin-right: 10px;
 }
 
+/* Website name styles */
 .website-name {
   font-size: 1.5rem;
   font-weight: bold;
   margin-right: 20px;
 }
 
+/* Search box container styles */
 .search-box-container {
   flex-grow: 1;
   display: flex;
@@ -40,6 +46,7 @@ body {
   justify-content: center;
 }
 
+/* Search box styles */
 .search-box {
   width: 500px; 
   padding: 10px;
@@ -51,18 +58,20 @@ body {
   font-size: 1rem;
 }
 
-
+/* Sort container styles */
 .sort-container {
   display: flex;
   align-items: center;
   margin-left: 10px;
 }
 
+/* Sort order label styles */
 .sort-order-label {
   font-size: 1rem;
   margin-right: 5px;
 }
 
+/* Sort order dropdown styles */
 .sort-order {
   padding: 5px;
   border: none;
@@ -72,25 +81,32 @@ body {
   cursor: pointer;
 }
 
+/* Filter by container styles */
 .filter-by-container {
   margin-left: 10px;
   display: flex;
   align-items: center;
+  max-width: 200px; /* Limit the width */
+  overflow: hidden; /* Hide overflowing content */
 }
 
+/* Filter by label styles */
 .filter-by-label {
   font-size: 1rem;
   margin-right: 5px;
 }
 
+/* Filter by dropdown styles */
 .filter-by {
   padding: 5px;
   border: none;
   border-radius: 3px;
   background-color: #333;
   color: white;
+  white-space: nowrap; /* Prevent text wrapping */
 }
 
+/* Conference container styles */
 #conferenceContainer {
   display: flex;
   flex-wrap: wrap;
@@ -99,6 +115,7 @@ body {
   margin-top: 120px; 
 }
 
+/* Conference card styles */
 .conference-card {
   width: 300px;
   margin: 10px;
@@ -108,21 +125,25 @@ body {
   background-color: #333;
 }
 
+/* Conference card image styles */
 .conference-card img {
   width: 100%;
   height: auto;
 }
 
+/* Conference card heading styles */
 .conference-card h2 {
   font-size: 1.2rem;
   margin: 10px 0;
 }
 
+/* Conference card paragraph styles */
 .conference-card p {
   font-size: 0.9rem;
   margin: 5px 0;
 }
 
+/* Organiser icon styles */
 .conference-card .organiser-icon {
   width: 24px;
   height: 24px;
@@ -130,26 +151,23 @@ body {
   vertical-align: middle;
 }
 
-
-/* Media Query for Mobile Devices  */
-
+/* Media Query for Mobile Devices */
 @media (max-width: 768px) {
   .header {
     padding: 10px;
   }
 
   .logo {
-    width: 60px; 
-    height: 60px; 
+    width: 60px;
+    height: 60px;
     margin-right: 10px;
   }
 
   .website-name {
-    font-size: 1rem; 
-    font-weight: normal; 
+    font-size: 1rem;
+    font-weight: normal;
     margin-right: 10px;
   }
-
 
   .search-box-container {
     flex-grow: 2;
@@ -157,23 +175,40 @@ body {
 
   .search-box {
     width: 100%;
-    max-width: 300px; 
+    max-width: 300px;
+    font-size: 0.9rem;
+  }
+
+  .sort-container {
+    margin-left: 5px;
+  }
+
+  .sort-order-label {
+    display: block;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+  }
+
+  .sort-order {
+    width: 100%;
+    max-width: 200px;
     font-size: 0.9rem;
   }
 
   .filter-by-container {
     margin-left: 5px;
+    max-width: 100%; /* Adjust the max-width to fit within the screen */
   }
 
   .filter-by-label {
-    display: block; 
+    display: block;
     font-size: 0.9rem;
     margin-bottom: 5px;
   }
 
   .filter-by {
     width: 100%;
-    max-width: 200px; 
+    max-width: 200px;
     font-size: 0.9rem;
   }
 
@@ -187,5 +222,3 @@ body {
     margin: 10px 0;
   }
 }
-
-
