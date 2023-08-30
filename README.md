@@ -10,13 +10,14 @@ The project is deployed on -
 
 # TechXpo Conference Schedule
 
-TechXpo is a web application that displays a schedule of upcoming conferences. Users can filter conferences by location and search for specific conferences. The application also provides a dark/light mode toggle for user preference.
+TechXpo is a web application that displays a schedule of upcoming conferences. Users can filter conferences by location and search for specific conferences. 
 
 ## Features
 
 - Display a list of upcoming conferences with details.
 - Filter conferences by location.
 - Search for conferences by title or description.
+- Sorts by date & time
 
 ## Technologies Used
 

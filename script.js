@@ -102,3 +102,42 @@ document.getElementById("searchBox").addEventListener("input", function() {
     }
   });
 });
+
+// Apply sorting based on selected option
+document.getElementById("sortOrder").addEventListener("change", function() {
+  const sortOrder = this.value;
+  const conferenceContainer = document.getElementById("conferenceContainer");
+  const conferenceCards = Array.from(conferenceContainer.children);
+
+  const sortedConferenceCards = [...conferenceCards];
+  sortConferenceCards(sortedConferenceCards, sortOrder);
+
+  conferenceContainer.innerHTML = "";
+  sortedConferenceCards.forEach(card => {
+    conferenceContainer.appendChild(card);
+  });
+});
+
+// sort cards
+function sortConferenceCards(cards, sortOrder) {
+  if (sortOrder === "Default") {
+    // bug - not going original order
+    return;
+  } else if (sortOrder === "earlier") {
+    cards.sort((a, b) => compareConferenceCards(a, b, "earlier"));
+  } else if (sortOrder === "later") {
+    cards.sort((a, b) => compareConferenceCards(a, b, "later"));
+  }
+}
+
+// compare conference cards to sort
+function compareConferenceCards(cardA, cardB, sortOrder) {
+  const dateA = new Date(cardA.querySelector(".date-time-container p").textContent);
+  const dateB = new Date(cardB.querySelector(".date-time-container p").textContent);
+
+  if (sortOrder === "earlier") {
+    return dateA - dateB;
+  } else {
+    return dateB - dateA;
+  }
+}

@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="author" content="Rounak Saha">
+  <meta name="description" content="CONFERENCE DETAILS">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="icons8-today-16.png" type="image/x-icon">
@@ -14,6 +16,15 @@
     <div class="search-box-container">
       <input type="text" id="searchBox" class="search-box" placeholder="Search...">
     </div>
+    <div class="sort-container">
+      <label for="sortOrder">Sort Order:</label>
+      <select id="sortOrder" class="sort-order">
+        <option value="default">Default</option>
+        <option value="earlier">Earlier first</option>
+        <option value="later">Later first</option>
+      </select>
+    </div>
+
     <div class="filter-by-container">
       <span class="filter-by-label">Filter by:</span>
       <select id="filterBy" class="filter-by">
