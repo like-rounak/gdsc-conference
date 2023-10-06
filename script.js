@@ -20,7 +20,6 @@ function createConferenceCard(conference) {
 
   const image = document.createElement("img");
   image.src = conference.banner_image;
-  image.alt = conference.title;
   conferenceCard.appendChild(image);
 
   const title = document.createElement("h2");
@@ -34,7 +33,6 @@ function createConferenceCard(conference) {
   const organiserIcon = document.createElement("img");
   organiserIcon.className = "organiser-icon";
   organiserIcon.src = conference.organiser_icon;
-  organiserIcon.alt = conference.organiser_name;
   conferenceCard.appendChild(organiserIcon);
 
   const organiserName = document.createElement("span");
